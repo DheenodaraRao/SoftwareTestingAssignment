@@ -4,6 +4,11 @@ public class OrderItem {
 	
 	private boolean qualityPaper;
 	private boolean designEffect;
+	private int quantity;
+	
+	public int getQuantity(){
+		return quantity;
+	}
 	
 	public boolean checkQualityPaper(){
 		return qualityPaper;
@@ -13,9 +18,10 @@ public class OrderItem {
 		return designEffect;
 	}
 	
-	public OrderItem(boolean qPaper, boolean dEffect){
+	public OrderItem(boolean qPaper, boolean dEffect, int quantity){
 		this.qualityPaper = qPaper;
 		this.designEffect = dEffect;
+		this.quantity = quantity;
 	}
 	
 	public boolean oneOptionSelected(){

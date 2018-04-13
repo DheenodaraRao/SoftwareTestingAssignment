@@ -2,7 +2,7 @@ package my.edu.utar;
 
 import java.util.Scanner;
 
-public class OrderingModule {
+public class OrderingModule implements IOrdering{
 
 	private Scanner scan;
 	private OrderList orderList;
@@ -54,7 +54,7 @@ public class OrderingModule {
 	public void createOrders(boolean dEffect, boolean hQuality, int quantity) {
 		
 		for(int i = 0; i < quantity; i++){
-			OrderItem order = new OrderItem(hQuality, dEffect);
+			OrderItem order = new OrderItem(hQuality, dEffect,quantity);
 			orderList.addOrder(order);
 		}
 	}
