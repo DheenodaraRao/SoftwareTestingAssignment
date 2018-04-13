@@ -53,9 +53,7 @@ public class OrderingModule implements IOrdering{
 
 	public void createOrders(boolean dEffect, boolean hQuality, int quantity) {
 		
-		for(int i = 0; i < quantity; i++){
 			OrderItem order = new OrderItem(hQuality, dEffect,quantity);
 			orderList.addOrder(order);
-		}
 	}
 }

@@ -14,7 +14,7 @@ public class DummyOrdering implements IOrdering{
 		}
 		else if(quantity > 99){
 			throw new IllegalArgumentException();
-		}		
+		}
 	}
 
 	public void createOrders(boolean dEffect, boolean hQuality, int quantity) {
