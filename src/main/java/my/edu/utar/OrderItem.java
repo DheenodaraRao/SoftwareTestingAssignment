@@ -54,4 +54,21 @@ public class OrderItem {
 			return false;
 		}
 	}
+	
+	@Override
+	public boolean equals(Object item){
+		
+		boolean yes = false;
+		OrderItem itm = (OrderItem)item;
+		
+		if(this.designEffect == itm.designEffect && this.qualityPaper == itm.qualityPaper 
+				&& this.quantity == itm.quantity){
+			yes = true;
+		}
+		else{
+			yes = false;
+		}
+		return yes;
+		
+	}
 }

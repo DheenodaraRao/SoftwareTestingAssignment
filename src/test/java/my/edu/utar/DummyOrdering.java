@@ -1,11 +1,14 @@
 package my.edu.utar;
 
-public class DummyOrdering implements IOrdering{
+public class DummyOrdering {
 	
 	private int quantity;
+	private OrderList orderList;
+	private OrderItem sampleOrder;
 	
 	public DummyOrdering(int quan){
 		this.quantity = quan;
+		orderList = new OrderList();
 	}
 
 	public void startOrdering() {
@@ -15,15 +18,16 @@ public class DummyOrdering implements IOrdering{
 		else if(quantity > 99){
 			throw new IllegalArgumentException();
 		}
+		else{
+			sampleOrder = new OrderItem(false, false, quantity);
+		}
 	}
 
 	public void createOrders(boolean dEffect, boolean hQuality, int quantity) {
-		// TODO Auto-generated method stub
 		
+		OrderItem order = new OrderItem(hQuality, dEffect,quantity);
+		orderList.addOrder(order);
 	}
 	
-	public int getQuantity(){
-		return quantity;
-	}
 
 }

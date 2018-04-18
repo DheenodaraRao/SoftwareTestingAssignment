@@ -6,10 +6,6 @@ public class OrderList {
 
 	private ArrayList<OrderItem> itemList;
 	
-	public int getQuantity(){
-		return itemList.size();
-	}
-	
 	public OrderList(){
 		itemList = new ArrayList<OrderItem>();
 	}

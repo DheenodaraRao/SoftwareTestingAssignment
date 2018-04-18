@@ -1,17 +1,19 @@
 package my.edu.utar;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class OrderingModule implements IOrdering{
+public class OrderingModule{
 
 	private Scanner scan;
 	private OrderList orderList;
 	
 	public OrderingModule(){
 		scan = new Scanner(System.in);
+		orderList = new OrderList();
 	}
 	
-	public void startOrdering(){
+	public boolean[] getOrderOptions(){
 		String select;
 		
 		boolean dEffect;
@@ -36,24 +38,30 @@ public class OrderingModule implements IOrdering{
 			hQuality = true;
 		}
 		
-		System.out.print("Quantity? ");
+		return new boolean[] {dEffect, hQuality};
+	}
+	
+	public int getOrderQuantity(){
+		int quantity;
+		
+		System.out.println("Quantity?");
+		
 		quantity = scan.nextInt();
 		
-		if(quantity < 0){
-			throw new IllegalArgumentException();
-		}
-		else if(quantity > 99){
-			throw new IllegalArgumentException();
-		}
-		else{
-			createOrders(dEffect, hQuality, quantity);
-		}
-		
+		return quantity;
 	}
 
-	public void createOrders(boolean dEffect, boolean hQuality, int quantity) {
+	public void createOrders(boolean dEffect, boolean hQuality, int quantity) throws IllegalArgumentException{
 		
-			OrderItem order = new OrderItem(hQuality, dEffect,quantity);
+		if(quantity < 1 || quantity > 99){
+			throw new IllegalArgumentException();
+		}
+		
+			OrderItem order = new OrderItem(dEffect,hQuality,quantity);
 			orderList.addOrder(order);
+	}
+	
+	public ArrayList<OrderItem> getOrders(){
+		return orderList.getOrders();
 	}
 }
