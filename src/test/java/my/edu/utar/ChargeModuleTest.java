@@ -16,7 +16,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitParamsRunner.class)
 public class ChargeModuleTest {
-	
+	/*
+	 * getParamIllegal1 is to test the boundary value analysis of all the quantity 
+	 * which is covered in the decision table
+	 * this also covers each test cases based on the decision table 
+	 * This test covers test case -> TC 04, TC 05, and etc
+	 */
 	public Object[] getParam(){
 		
 		OrderItem item1 = new OrderItem(false, false, 1);
