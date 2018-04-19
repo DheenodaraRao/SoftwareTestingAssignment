@@ -6,7 +6,7 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
 	ChargeModuleTest.class,
 	OrderingModuleTest.class,
-	PrintModuleTest.class
+	PhotoPrinterTest.class
 })
 
 public class TestSuite {

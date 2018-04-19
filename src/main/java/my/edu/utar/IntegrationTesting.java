@@ -56,7 +56,7 @@ public class IntegrationTesting {
 		double charge = cm.getCharge(om.getOrderList());
 		System.out.println("Charge: RM" + charge);
 		
-		PrintModule pm = new PrintModule();
+		PhotoPrinter pm = new PhotoPrinter();
 		pm.queueRequest(om.getOrderList());
 	}
 }

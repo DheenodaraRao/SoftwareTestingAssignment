@@ -24,13 +24,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitParamsRunner.class)
-public class PrintModuleTest {
+public class PhotoPrinterTest {
 
 	@Test
 	public void testPrint(){
 		
-		PrintModule pm = new PrintModule();
-		PrintModule pmspy = spy(pm);
+		PhotoPrinter pm = new PhotoPrinter();
+		PhotoPrinter pmspy = spy(pm);
 		
 		//hard coded test values as this is not critical and the codes may/can be erased for 
 		//new implementation as the original codes are unknown

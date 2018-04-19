@@ -1,8 +1,8 @@
 package my.edu.utar;
 
-public class PrintModule {
+public class PhotoPrinter {
 
-	public PrintModule(){
+	public PhotoPrinter(){
 		
 	}
 	
