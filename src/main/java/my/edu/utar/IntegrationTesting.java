@@ -6,6 +6,7 @@ public class IntegrationTesting {
 	
 	static Scanner scan = null;
 
+	//integration testing
 	public static void main(String[] args){
 		
 		boolean cont = true;

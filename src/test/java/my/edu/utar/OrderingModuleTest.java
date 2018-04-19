@@ -77,6 +77,11 @@ public class OrderingModuleTest {
     }
 */
 	
+	/*
+	 * getParamIllegal1 is to test the equivalence partitioning of the quantity 
+	 * which is invalid if quantity is less than 1.
+	 * This test covers test case -> TC 01
+	 */
 	public Object[] getParamIllegal1(){
 		String fileName = "orderTestIllegal1.txt";
 
@@ -126,6 +131,11 @@ public class OrderingModuleTest {
         return data;
     }
 	
+	/*
+	 * getParamIllegal2 is to test the equivalence partitioning of the quantity 
+	 * which is invalid if quantity is more than 99.
+	 * This test covers test case -> TC 02
+	 */
 	public Object[] getParamIllegal2(){
 		String fileName = "orderTestIllegal2.txt";
 
@@ -174,6 +184,11 @@ public class OrderingModuleTest {
         return data;
     }
 	
+	/*
+	 * getParamLegal is to test the equivalence partitioning of the quantity 
+	 * which is valid if quantity is >= 1 and quantity <= 99.
+	 * This test covers test case -> TC 03
+	 */
 	public Object[] getParamLegal(){
 		String fileName = "orderTestLegal.txt";
 
