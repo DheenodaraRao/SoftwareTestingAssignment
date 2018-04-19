@@ -47,7 +47,7 @@ public class OrderingModule{
 		System.out.println("Quantity?");
 		
 		quantity = scan.nextInt();
-		
+		String skip = scan.nextLine();
 		return quantity;
 	}
 
@@ -63,5 +63,9 @@ public class OrderingModule{
 	
 	public ArrayList<OrderItem> getOrders(){
 		return orderList.getOrders();
+	}
+	
+	public OrderList getOrderList(){
+		return orderList;
 	}
 }

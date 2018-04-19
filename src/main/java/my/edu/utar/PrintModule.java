@@ -12,6 +12,6 @@ public class PrintModule {
 	}
 	
 	public void sendRequest(){
-		
+		System.out.println("Sending Request");
 	}
 }
