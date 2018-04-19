@@ -44,7 +44,7 @@ public class PrintModuleTest {
 		list.addOrder(item2);
 		list.addOrder(item3);
 		
-		pmspy.print(list);
+		pmspy.queueRequest(list);
 		
 		verify(pmspy, times(3)).sendRequest();
 	}

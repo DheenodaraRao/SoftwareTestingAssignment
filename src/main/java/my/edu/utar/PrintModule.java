@@ -6,7 +6,7 @@ public class PrintModule {
 		
 	}
 	
-	public void print(OrderList list){
+	public void queueRequest(OrderList list){
 		for(int i = 0; i < list.getOrders().size(); i++)
 		this.sendRequest();
 	}

@@ -57,6 +57,6 @@ public class IntegrationTesting {
 		System.out.println("Charge: RM" + charge);
 		
 		PrintModule pm = new PrintModule();
-		pm.print(om.getOrderList());
+		pm.queueRequest(om.getOrderList());
 	}
 }
