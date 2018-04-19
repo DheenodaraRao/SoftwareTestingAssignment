@@ -118,11 +118,6 @@ public class OrderingModuleTest {
             // ex.printStackTrace();
         }
         
-        for(int i = 0; i < list.size(); i++){
-        	Object[] data = (Object[]) list.get(i);
-        	System.out.println(data[0] + " " + data[1] + " " + data[2]);
-        }
-        
         Object[] data = new Object[list.size()];
         for(int i = 0; i < list.size(); i++){
         	data[i] = (Object[]) list.get(i);
@@ -169,11 +164,6 @@ public class OrderingModuleTest {
                 + fileName + "'");                  
             // Or we could just do this: 
             // ex.printStackTrace();
-        }
-        
-        for(int i = 0; i < list.size(); i++){
-        	Object[] data = (Object[]) list.get(i);
-        	System.out.println(data[0] + " " + data[1] + " " + data[2]);
         }
         
         Object[] data = new Object[list.size()];
@@ -223,11 +213,6 @@ public class OrderingModuleTest {
                 + fileName + "'");                  
             // Or we could just do this: 
             // ex.printStackTrace();
-        }
-        
-        for(int i = 0; i < list.size(); i++){
-        	Object[] data = (Object[]) list.get(i);
-        	System.out.println(data[0] + " " + data[1] + " " + data[2]);
         }
         
         Object[] data = new Object[list.size()];
