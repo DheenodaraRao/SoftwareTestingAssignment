@@ -1,0 +1,14 @@
+false
+true
+9
+true
+true
+30
+30.0
+true
+false
+29
+false
+false
+60
+23.4
